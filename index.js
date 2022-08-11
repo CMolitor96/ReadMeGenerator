@@ -48,7 +48,7 @@ inquirer
         let test = response.test;
         // console.log(title);
         // console.log(`${title}\n ${description}\n${install}\n${usage}\n${contribution}\n${test}`);
-        fs.writeFile('readmeTest.md', writeToFile(title, description, install, usage, contribution, test), (err) => {
+        fs.writeFile('README.md', writeToFile(title, description, install, usage, contribution, test), (err) => {
             if (err) {
                 console.log(err);
             }
