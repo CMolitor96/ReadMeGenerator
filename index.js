@@ -57,20 +57,20 @@ inquirer
 
 // TODO: Create a function to write README file
 function writeToFile(title, description, install, usage, contribution, test) {
-    return `**Test ReadMe
-    Hello everyone this is my readmeFile:
-    Project Title:
-    ${title}
-    Project Description:
-    ${description}
-    Project Install:
-    ${install}
-    Project Usage:
-    ${usage}
-    Project Contribution:
-    ${contribution}
-    Project Testing:
-    ${test}`;
+    return `**Test ReadMe\n
+    Hello everyone this is my readmeFile:\n
+    Project Title:\n
+    ${title}\n
+    Project Description:\n
+    ${description}\n
+    Project Install:\n
+    ${install}\n
+    Project Usage:\n
+    ${usage}\n
+    Project Contribution:\n
+    ${contribution}\n
+    Project Testing:\n
+    ${test}\n`;
 }
 
 // TODO: Create a function to initialize app
