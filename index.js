@@ -70,7 +70,8 @@ function writeToFile(title, description, install, usage, contribution, test) {
     Project Contribution:\n
     ${contribution}\n
     Project Testing:\n
-    ${test}\n`;
+    ${test}\n
+    https://www.google.com/`;
 }
 
 // TODO: Create a function to initialize app
