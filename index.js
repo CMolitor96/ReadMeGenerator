@@ -94,11 +94,22 @@ ${description}
 ## Project Install:
 ${install}
 
+How to run application in command line
+![Image of executing application in command line](./assets/images/Execute.png)
+
+
 ## License:
 Please click the license badge for more information on the license under which this project is covered.
 ${license}
 ## Project Usage:
 ${usage}
+
+Halfway through filling out inputs:
+![Halfway through filling out sections. Displays a few of the text input sections and the list choice](./assets/images/In%20Progress.png)
+
+Finished with inputs:
+![Application executed and all sections filled out. Not pictured is generated README.md file](./assets/images/Filled%20Out.png)
+
 ## Project Contribution:
 ${contribution}
 ## Tests:

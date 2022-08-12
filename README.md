@@ -19,15 +19,26 @@ This is where the project description goes
 ## Project Install:
 This is where the installation instructions go
 
+How to run application in command line
+![Image of executing application in command line](./assets/images/Execute.png)
+
+
 ## License:
 Please click the license badge for more information on the license under which this project is covered.
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Project Usage:
-This is where instructions for use of the application go
+This is where the usage information goes
+
+Halfway through filling out inputs:
+![Halfway through filling out sections. Displays a few of the text input sections and the list choice](./assets/images/In%20Progress.png)
+
+Finished with inputs:
+![Application executed and all sections filled out. Not pictured is generated README.md file](./assets/images/Filled%20Out.png)
+
 ## Project Contribution:
-This is where contribution information goes
+This is where the contribution information goes
 ## Tests:
-This is where testing instructions go
+This is where the testing instructions go
 ## Questions:
 GitHub Username: CMolitor96
 
