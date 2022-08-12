@@ -76,31 +76,33 @@ inquirer
 
 // TODO: Create a function to write README file
 function writeToFile(title, description, install, license, usage, contribution, test, github, email) {
-    return `#${title}
-    ##Project Description:
-    ${description}
-    ##Table of Contents:
-    [Project Title](#${title})
-    [Project Description](#${description})
-    [Project Install](#${install})
-    [License]
-    [Project Usage]
-    [Project Contribution]
-    [Project Testing]
-    [Questions](###Questions)
-    ###Project Install:
-    ${install}
-    ###License:
-    ${license}
-    ###Project Usage:
-    ${usage}
-    ###Project Contribution:
-    ${contribution}
-    ###Project Testing:
-    ${test}
-    ###Questions:
-    Link to Personal Github: https://github.com/${github} 
-    Please email me at ${email} for any questions regarding this application.`;
+return `**#${title}**
+
+## Project Description
+${description}
+
+## Table of Contents:
+[Project Install](#project-install)
+[License](#license)
+[Project Usage](#project-usage)
+[Project Contribution](#project-contribution)
+[Project Testing](#project-testing)
+[Questions](#questions)
+
+### Project Install:
+${install}
+
+### License:
+${license}
+### Project Usage:
+${usage}
+### Project Contribution:
+${contribution}
+### Project Testing:
+${test}
+### Questions:
+GitHub profile: [${github}] (https://github.com/${github})
+Please email me at (${email}) for any questions regarding this application.`;
 }
 
 // TODO: Create a function to initialize app
