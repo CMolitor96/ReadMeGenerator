@@ -21,6 +21,12 @@ const questions = [
         name: 'install',
     },
     {
+        type: 'list',
+        message: 'Type of License',
+        choices: ['a', 'b', 'c', 'd'],
+        name: 'license'
+    },
+    {
         type: 'input',
         message: 'Usage Information',
         name: 'usage',
@@ -35,6 +41,16 @@ const questions = [
         message: 'Test Instructions',
         name: 'test',
     },
+    {
+        type: 'input',
+        message: 'GitHub Username',
+        name: 'github',
+    },
+    {
+        type: 'input',
+        message: 'Email',
+        name: 'email',
+    },
 ];
 
 inquirer
@@ -43,12 +59,15 @@ inquirer
         let title = response.title;
         let description = response.description;
         let install = response.install;
+        let license = response.license;
         let usage = response.install;
         let contribution = response.contribution;
         let test = response.test;
+        let github = response.github;
+        let email = response.email;
         // console.log(title);
         // console.log(`${title}\n ${description}\n${install}\n${usage}\n${contribution}\n${test}`);
-        fs.writeFile('README.md', writeToFile(title, description, install, usage, contribution, test), (err) => {
+        fs.writeFile('README.md', writeToFile(title, description, install, license, usage, contribution, test, github, email), (err) => {
             if (err) {
                 console.log(err);
             }
@@ -56,22 +75,32 @@ inquirer
     });
 
 // TODO: Create a function to write README file
-function writeToFile(title, description, install, usage, contribution, test) {
-    return `**Test ReadMe
-    Hello everyone this is my readmeFile:
-    Project Title:
-    ${title}
-    Project Description:
+function writeToFile(title, description, install, license, usage, contribution, test, github, email) {
+    return `#${title}
+    ##Project Description:
     ${description}
-    Project Install:
+    ##Table of Contents:
+    [Project Title](#${title})
+    [Project Description](#${description})
+    [Project Install](#${install})
+    [License]
+    [Project Usage]
+    [Project Contribution]
+    [Project Testing]
+    [Questions](###Questions)
+    ###Project Install:
     ${install}
-    Project Usage:
+    ###License:
+    ${license}
+    ###Project Usage:
     ${usage}
-    Project Contribution:
+    ###Project Contribution:
     ${contribution}
-    Project Testing:
+    ###Project Testing:
     ${test}
-    https://www.google.com/`;
+    ###Questions:
+    Link to Personal Github: https://github.com/${github} 
+    Please email me at ${email} for any questions regarding this application.`;
 }
 
 // TODO: Create a function to initialize app
