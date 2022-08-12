@@ -121,9 +121,3 @@ GitHub profile: (https://github.com/${github})
 
 Please email me at (${email}) for any further questions regarding this application.`;
 }
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
