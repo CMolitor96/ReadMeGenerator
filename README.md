@@ -1,14 +1,19 @@
-**#Automatic ReadMe Generator**
+**# Automatic ReadME Generator**
 
 ## Project Description
-Automates autopopulating a readme
+This allows a developer to automatially populate their readME on GitHub with short user inputs with the following questions
 
 ## Table of Contents:
 [Project Install](#project-install)
+
 [License](#license)
+
 [Project Usage](#project-usage)
+
 [Project Contribution](#project-contribution)
+
 [Project Testing](#project-testing)
+
 [Questions](#questions)
 
 ### Project Install:
@@ -19,9 +24,10 @@ a
 ### Project Usage:
 run node index.js
 ### Project Contribution:
-i dont know what this means
+IDK what this means
 ### Project Testing:
-I dont know what this means
+IDK what this means
 ### Questions:
 GitHub profile: [CMolitor96] (https://github.com/CMolitor96)
+
 Please email me at (charlie.molitor.38@gmail.com) for any questions regarding this application.

@@ -76,17 +76,22 @@ inquirer
 
 // TODO: Create a function to write README file
 function writeToFile(title, description, install, license, usage, contribution, test, github, email) {
-return `**#${title}**
+return `**# ${title}**
 
 ## Project Description
 ${description}
 
 ## Table of Contents:
 [Project Install](#project-install)
+
 [License](#license)
+
 [Project Usage](#project-usage)
+
 [Project Contribution](#project-contribution)
+
 [Project Testing](#project-testing)
+
 [Questions](#questions)
 
 ### Project Install:
@@ -102,6 +107,7 @@ ${contribution}
 ${test}
 ### Questions:
 GitHub profile: [${github}] (https://github.com/${github})
+
 Please email me at (${email}) for any questions regarding this application.`;
 }
 
