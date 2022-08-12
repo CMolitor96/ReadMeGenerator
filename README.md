@@ -1,7 +1,7 @@
-# **Automatic ReadMe Generator**
+# **This is where the project title goes**
 
 ## Project Description
-This application is an automatic readMe generator that simply takes user input and creates and nicely formats a readme for a github repo
+This is where the project description goes
 
 ## Table of Contents:
 [Project Install](#project-install)
@@ -17,17 +17,17 @@ This application is an automatic readMe generator that simply takes user input a
 [Questions](#questions)
 
 ## Project Install:
-run the js file with node in this case, run node index.js
+This is where the installation instructions go
 
 ## License:
 Please click the license badge for more information on the license under which this project is covered.
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Project Usage:
-Open Source
+This is where instructions for use of the application go
 ## Project Contribution:
-Free to use
+This is where contribution information goes
 ## Tests:
-Lots of tests
+This is where testing instructions go
 ## Questions:
 GitHub Username: CMolitor96
 
