@@ -1,7 +1,7 @@
-**# Automatic ReadME Generator**
+# **Automatic ReadME Generator**
 
 ## Project Description
-This allows a developer to automatially populate their readME on GitHub with short user inputs with the following questions
+project to automatically update readme
 
 ## Table of Contents:
 [Project Install](#project-install)
@@ -24,9 +24,9 @@ a
 ### Project Usage:
 run node index.js
 ### Project Contribution:
-IDK what this means
+idk
 ### Project Testing:
-IDK what this means
+idk
 ### Questions:
 GitHub profile: [CMolitor96] (https://github.com/CMolitor96)
 

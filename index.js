@@ -76,7 +76,7 @@ inquirer
 
 // TODO: Create a function to write README file
 function writeToFile(title, description, install, license, usage, contribution, test, github, email) {
-return `**# ${title}**
+return `# **${title}**
 
 ## Project Description
 ${description}
