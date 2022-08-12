@@ -23,7 +23,7 @@ const questions = [
     {
         type: 'list',
         message: 'Type of License',
-        choices: ['a', 'b', 'c', 'd'],
+        choices: ['MIT License', 'GNU GPLv3', 'Apache', 'Mozilla Public License 2.0'],
         name: 'license'
     },
     {
@@ -56,18 +56,23 @@ const questions = [
 inquirer
     .prompt(questions).then((response) => {
         // console.log(response);
-        let title = response.title;
-        let description = response.description;
-        let install = response.install;
-        let license = response.license;
-        let usage = response.install;
-        let contribution = response.contribution;
-        let test = response.test;
-        let github = response.github;
-        let email = response.email;
+        // const {title} = response;
+        // let title = response.title;
+        // let description = response.description;
+        // let install = response.install;
+        // let license = response.license;
+        // let usage = response.install;
+        // let contribution = response.contribution;
+        // let test = response.test;
+        // let github = response.github;
+        // let email = response.email;
         // console.log(title);
         // console.log(`${title}\n ${description}\n${install}\n${usage}\n${contribution}\n${test}`);
-        fs.writeFile('README.md', writeToFile(title, description, install, license, usage, contribution, test, github, email), (err) => {
+        console.log(response.license);
+        if (response.license === 'MIT License') {
+            response.license = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+        }
+        fs.writeFile('README.md', writeToFile(response), (err) => {
             if (err) {
                 console.log(err);
             }
@@ -75,7 +80,7 @@ inquirer
     });
 
 // TODO: Create a function to write README file
-function writeToFile(title, description, install, license, usage, contribution, test, github, email) {
+function writeToFile({title, description, install, license, usage, contribution, test, github, email}) {
 return `# **${title}**
 
 ## Project Description
@@ -85,6 +90,7 @@ ${description}
 [Project Install](#project-install)
 
 [License](#license)
+${license}
 
 [Project Usage](#project-usage)
 
@@ -94,18 +100,18 @@ ${description}
 
 [Questions](#questions)
 
-### Project Install:
+## Project Install:
 ${install}
 
-### License:
+## License:
 ${license}
-### Project Usage:
+## Project Usage:
 ${usage}
-### Project Contribution:
+## Project Contribution:
 ${contribution}
-### Project Testing:
+## Test Instructions:
 ${test}
-### Questions:
+## Questions:
 GitHub profile: [${github}] (https://github.com/${github})
 
 Please email me at (${email}) for any questions regarding this application.`;
