@@ -71,6 +71,12 @@ inquirer
         console.log(response.license);
         if (response.license === 'MIT License') {
             response.license = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+        } else if (response.license === 'GNU GPLv3') {
+            response.license = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
+        } else if (response.license === 'Apache') {
+            response.license = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+        } else if (response.license === 'Mozilla Public License 2.0') {
+            response.license = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)';
         }
         fs.writeFile('README.md', writeToFile(response), (err) => {
             if (err) {
@@ -112,7 +118,8 @@ ${contribution}
 ## Test Instructions:
 ${test}
 ## Questions:
-GitHub profile: [${github}] (https://github.com/${github})
+GitHub Username: ${github}
+GitHub profile: (https://github.com/${github})
 
 Please email me at (${email}) for any questions regarding this application.`;
 }

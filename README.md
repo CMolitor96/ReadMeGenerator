@@ -1,13 +1,13 @@
-# **f**
+# **Automatic ReadME Generator**
 
 ## Project Description
-f
+This application is an automatic generator for a github readme
 
 ## Table of Contents:
 [Project Install](#project-install)
 
 [License](#license)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 [Project Usage](#project-usage)
 
@@ -18,17 +18,18 @@ f
 [Questions](#questions)
 
 ## Project Install:
-f
+Run the index.js script with node
 
 ## License:
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Project Usage:
-f
+Open Source
 ## Project Contribution:
-d
+IDK
 ## Test Instructions:
-f
+IDK
 ## Questions:
-GitHub profile: [d] (https://github.com/d)
+GitHub Username: CMolitor96
+GitHub profile: (https://github.com/CMolitor96)
 
-Please email me at (f) for any questions regarding this application.
+Please email me at (charlie.molitor.38@gmail.com) for any questions regarding this application.
