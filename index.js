@@ -87,7 +87,7 @@ ${description}
 
 [Project Contribution](#project-contribution)
 
-[Project Testing](#project-testing)
+[Project Testing](#tests)
 
 [Questions](#questions)
 
@@ -95,19 +95,20 @@ ${description}
 ${install}
 
 ## License:
+Please click the license badge for more information on the license under which this project is covered.
 ${license}
 ## Project Usage:
 ${usage}
 ## Project Contribution:
 ${contribution}
-## Test Instructions:
+## Tests:
 ${test}
 ## Questions:
 GitHub Username: ${github}
 
 GitHub profile: (https://github.com/${github})
 
-Please email me at (${email}) for any questions regarding this application.`;
+Please email me at (${email}) for any further questions regarding this application.`;
 }
 
 // TODO: Create a function to initialize app
