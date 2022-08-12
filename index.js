@@ -55,20 +55,7 @@ const questions = [
 
 inquirer
     .prompt(questions).then((response) => {
-        // console.log(response);
-        // const {title} = response;
-        // let title = response.title;
-        // let description = response.description;
-        // let install = response.install;
-        // let license = response.license;
-        // let usage = response.install;
-        // let contribution = response.contribution;
-        // let test = response.test;
-        // let github = response.github;
-        // let email = response.email;
-        // console.log(title);
-        // console.log(`${title}\n ${description}\n${install}\n${usage}\n${contribution}\n${test}`);
-        console.log(response.license);
+        //License badging urls from: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
         if (response.license === 'MIT License') {
             response.license = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
         } else if (response.license === 'GNU GPLv3') {
@@ -84,9 +71,8 @@ inquirer
             }
         })
     });
-
 // TODO: Create a function to write README file
-function writeToFile({title, description, install, license, usage, contribution, test, github, email}) {
+function writeToFile({title, description, install, license, usage, contribution, test, github, email},) {
 return `# **${title}**
 
 ## Project Description
@@ -96,7 +82,6 @@ ${description}
 [Project Install](#project-install)
 
 [License](#license)
-${license}
 
 [Project Usage](#project-usage)
 
@@ -119,6 +104,7 @@ ${contribution}
 ${test}
 ## Questions:
 GitHub Username: ${github}
+
 GitHub profile: (https://github.com/${github})
 
 Please email me at (${email}) for any questions regarding this application.`;
