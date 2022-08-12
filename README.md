@@ -36,6 +36,10 @@ Halfway through filling out inputs:
 Finished with inputs:
 ![Application executed and all sections filled out. Not pictured is generated README.md file](./assets/images/Filled%20Out.png)
 
+Video Walkthrough:
+[GitHubVideo.webm](https://user-images.githubusercontent.com/103666997/184443214-a3d1ce17-bc92-45cf-a9a8-874f9d608c78.webm)
+
+
 ## Project Contribution:
 This is the section to name collaborators on the project or sources where inspiration or content was taken and applied to this project. Links should be provided to all other collaborators or source material.
 ## Tests:
